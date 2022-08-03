@@ -37,5 +37,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun clearFields(editTextList: List<EditText>) =
-        editTextList.asSequence().map { it.text.clear() }
+        editTextList.map { it.text.clear() }
 }
