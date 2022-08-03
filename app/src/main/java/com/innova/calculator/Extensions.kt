@@ -9,7 +9,3 @@ fun EditText.formatToNumber(): Double {
     else text.toDouble()
 }
 
-infix fun Double.add(b:Double) = this + b
-
-infix fun Double.subtraction(b:Double) = this - b
-
