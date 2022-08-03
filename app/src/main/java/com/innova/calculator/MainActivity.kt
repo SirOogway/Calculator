@@ -21,13 +21,13 @@ class MainActivity : AppCompatActivity() {
             btnAdd.setOnClickListener {
                 val (a, b) = editTextList.map { it.formatToNumber() }
                 clearFields(editTextList)
-                showResult(tvResult, add(a, b))
+                showResult(tvResult, a add b)
             }
 
             btnSub.setOnClickListener {
                 val (a, b) = editTextList.map { it.formatToNumber() }
                 clearFields(listOf(etValueOne, etValueTwo))
-                showResult(tvResult, subtraction(a, b))
+                showResult(tvResult, a subtraction b)
             }
         }
     }
